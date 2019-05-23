@@ -1,4 +1,4 @@
-package cordova-plugin-sync;
+package cordova.plugin.sync;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -29,9 +29,9 @@ public class synPlguin extends CordovaPlugin {
             try{
                 int p1 = Integer.ParseIntargs.getJSONObject(0).getString('param1');
                 int p2 = Integer.ParseIntargs.getJSONObject(0).getString('param2');
-                callback.success("" +(p1+p2))
+                callback.success("" +(p1+p2));
             }catch(Exception ex){
-                callback.error("Something went wrong " + ex)
+                callback.error("Something went wrong " + ex);
             }
         }else{
             callback.error("please dont pass null values");
